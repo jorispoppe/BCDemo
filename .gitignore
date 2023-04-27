@@ -1,20 +1,31 @@
-*.app
-*.flf
-*.bclicense
-*.g.xlf
-.DS_Store
-Thumbs.db
-TestResults*.xml
-bcptTestResults*.json
-BuildOutput.txt
-rad.json
-.output/
-.dependencies/
-.buildartifacts/
+### AL ###
+
+# Symbols folder
 .alpackages/
-.packages/
+
+# Snapshots folder
+.snapshots/
+
+# VSCode folder
 .alcache/
 .altemplates/
-.snapshots/
-cache_*
-~$*
+.history/
+launch.json
+rad.json
+
+# Test folders and files
+.output/
+.altestrunner/
+TestResults.xml
+
+#Extension App-file
+*.app
+
+#Translation Base-file
+*.g.xlf
+
+#License-file
+*.flf
+
+# Include app.json
+!app.json

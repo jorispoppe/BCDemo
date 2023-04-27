@@ -1,0 +1,36 @@
+{
+    "name": "App Specific Rules",
+    "description": "App Specific ruleset",
+    "rules": [
+        {
+            "id": "PTE0012",
+            "action": "None",
+            "justification": "The InternalsVisibleTo property will expose your internal objects to any extension with the given name, publisher, and ID. Using access modifiers for security-sensitive code is not recommended. - App can be used by other SDP apps."
+        },
+        {
+            "id": "AA0072",
+            "action" : "None",
+            "justification": "The name of variables and parameters must be suffixed with the type or object name."
+        },
+        {
+            "id": "AA0215",
+            "action" : "None",
+            "justification": "Follow the style guide about the best practices for naming."
+        },
+        {
+            "id": "AA0241",
+            "action" : "None",
+            "justification": "Use all lowercase letters for reserved language keywords."
+        },
+        {
+            "id": "LC0002",
+            "action": "None",
+            "justification": "Any Commit(); needs a code comment"
+        },
+        {
+            "id": "LC0010",
+            "action": "None",
+            "justification": "Show warning about code metrics for each function or trigger"
+        }
+    ]
+}

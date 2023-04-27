@@ -1,0 +1,123 @@
+{
+    "[al]": {
+        "editor.codeLens": true,
+        "editor.formatOnSave": true,
+        "editor.semanticHighlighting.enabled": true,
+        "editor.suggestSelection": "first",
+        "editor.wordBasedSuggestions": false,
+    },
+    "al.codeAnalyzers": [
+        "${CodeCop}",
+        "${UICop}",
+        "${PerTenantExtensionCop}",
+        "${analyzerFolder}BusinessCentral.LinterCop.dll"
+    ],
+    "al.enableCodeActions": true,
+    "al.enableCodeAnalysis": true,
+    "al.ruleSetPath": "./.vscode/app.ruleset.json",
+    "alOutline.addToolTipsToPageFields": true,
+    "alOutline.apiFieldNamesConversion": [
+        {
+            "searchRegExp": "^no$",
+            "newValue": "number"
+        },
+        {
+            "searchRegExp": "No$",
+            "newValue": "Number"
+        },
+        {
+            "searchRegExp": "^systemId$",
+            "newValue": "id"
+        },
+        {
+            "searchRegExp": "^systemModifiedAt$",
+            "newValue": "lastModifiedDateTime"
+        }
+    ],
+    "alOutline.codeActionsOnSave": [
+        "FormatDocument",
+        "SortCustomizations",
+        "SortPermissions",
+        "SortPermissionSetList",
+        "SortProcedures",
+        "SortProperties",
+        "SortReportColumns",
+        "SortTableFields",
+        "SortVariables"
+    ],
+    "alOutline.codeCleanupActions": [
+        "AddMissingParentheses",
+        "AddObjectCaptions",
+        "AddPageFieldCaptions",
+        "AddTableFieldCaptions",
+        "AddToolTips",
+        "ConvertObjectIdsToNames",
+        "FixIdentifiersCase",
+        "FixKeywordsCase",
+        "FormatDocument",
+        "LockRemovedFieldCaptions",
+        "RemoveBeginEnd",
+        "RemoveEmptyLines",
+        "RemoveEmptySections",
+        "RemoveUnusedVariables",
+        "RemoveWithStatements",
+        "SortCustomizations",
+        "SortPermissions",
+        "SortPermissionSetList",
+        "SortProcedures",
+        "SortProperties",
+        "SortReportColumns",
+        "SortTableFields",
+        "SortVariables",
+        "TrimTrailingWhitespace"
+    ],
+    "alOutline.defaultAddPageFieldCaptionsSettings": {
+        "setActionGroupsCaptions": true,
+        "setActionsCaptions": true,
+        "setFieldsCaptions": true,
+        "setGroupsCaptions": true,
+        "setLabelsCaptions": true,
+        "setPartsCaptions": false
+    },
+    "alOutline.defaultRemoveUnusedVariablesSettings": {
+        "removeGlobalVariables": true,
+        "removeLocalMethodParameters": true,
+        "removeLocalVariables": true
+    },
+    "alOutline.fixCodeCopMissingParenthesesOnSave": true,
+    "alOutline.lockRemovedFieldsCaptions": true,
+    "alOutline.noEmptyLinesAtTheEndOfWizardGeneratedFiles": true,
+    "ALTB.snippetTargetLanguage": "nl-BE",
+    "ALTB.snippetTargetLanguage2": "fr-BE",
+    "ALTB.UseOldFileNamingConventions": false,
+    "al-xml-doc.CheckObjectDocumentationInformationLevel": "Warning",
+    "al-xml-doc.CheckProcedureDocumentationForAccessLevel": [
+        "Public"
+    ],
+    "al-xml-doc.CheckProcedureDocumentationForType": [
+        "Global Procedures",
+        "Local Procedures",
+        "Internal Procedures",
+        "Protected Procedures",
+        "Event Publisher",
+        "Control Add-In Events"
+    ],
+    "al-xml-doc.CheckProcedureDocumentationInformationLevel": "Warning",
+    "CRS.AlSubFolderName": "src",
+    "CRS.ExtensionObjectNamePattern": "",
+    "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.OnSaveAlFileAction": "Rename",
+    "CRS.ObjectNamePrefix": "JPO",
+    "CRS.RemovePrefixFromFilename": true,
+    "CRS.RenameWithGit": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "files.exclude": {
+        "**/.alcache": true
+    },
+    "NAB.UseDTS": true,
+    "NAB.UseExternalTranslationTool": true
+}
