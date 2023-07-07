@@ -1,13 +1,8 @@
-/// <summary>
-/// Codeunit JPO Error Handler (ID 60000).
-/// </summary>
 codeunit 60000 "JPO Error Handler"
 {
-    /// <summary>
-    /// HandleError.
-    /// </summary>
-    /// <param name="ErrorDetails">ErrorInfo.</param>
-    procedure HandleError(ErrorDetails: ErrorInfo)
+    Access = Internal;
+
+    internal procedure HandleError(ErrorDetails: ErrorInfo)
     var
         Customer: Record Customer;
         CustomerNo: Text;

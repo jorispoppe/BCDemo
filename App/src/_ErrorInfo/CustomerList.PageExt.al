@@ -1,6 +1,3 @@
-/// <summary>
-/// PageExtension JPO Customer List (ID 60000) extends Record Customer List.
-/// </summary>
 pageextension 60000 "JPO Customer List" extends "Customer List"
 {
     actions

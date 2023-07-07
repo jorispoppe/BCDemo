@@ -18,9 +18,9 @@
             "justification": "Follow the style guide about the best practices for naming."
         },
         {
-            "id": "AA0241",
-            "action" : "None",
-            "justification": "Use all lowercase letters for reserved language keywords."
+            "id": "AW0006",
+            "action": "Warning",
+            "justification": "Use the UsageCategory and ApplicationArea properties to be searchable (Increased importance)"
         },
         {
             "id": "LC0002",
@@ -31,6 +31,22 @@
             "id": "LC0010",
             "action": "None",
             "justification": "Show warning about code metrics for each function or trigger"
+        },
+        {
+            "id": "LC0011",
+            "action" : "Warning",
+            "justification": "Every object needs to specify a value for the Access property."
+        },
+        {
+            "id": "LC0018",
+            "action": "Warning",
+            "justification": "Events in internal codeunits should be accessible"
+        }, 
+        {
+            "id": "LC0021",
+            "action": "Warning",
+            "justification": "Confirm() must be implemented through the Confirm Management codeunit" 
         }
     ]
 }
+

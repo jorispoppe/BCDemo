@@ -1,11 +1,4 @@
 {
-    "[al]": {
-        "editor.codeLens": true,
-        "editor.formatOnSave": true,
-        "editor.semanticHighlighting.enabled": true,
-        "editor.suggestSelection": "first",
-        "editor.wordBasedSuggestions": false,
-    },
     "al.codeAnalyzers": [
         "${CodeCop}",
         "${UICop}",
@@ -16,6 +9,9 @@
     "al.enableCodeAnalysis": true,
     "al.ruleSetPath": "./.vscode/app.ruleset.json",
     "alOutline.addToolTipsToPageFields": true,
+    "alOutline.additionalMandatoryAffixesPatterns": [
+        "JPO"
+    ],
     "alOutline.apiFieldNamesConversion": [
         {
             "searchRegExp": "^no$",
@@ -34,18 +30,8 @@
             "newValue": "lastModifiedDateTime"
         }
     ],
-    "alOutline.codeActionsOnSave": [
-        "FormatDocument",
-        "SortCustomizations",
-        "SortPermissions",
-        "SortPermissionSetList",
-        "SortProcedures",
-        "SortProperties",
-        "SortReportColumns",
-        "SortTableFields",
-        "SortVariables"
-    ],
     "alOutline.codeCleanupActions": [
+        "AddEnumValuesCaptions",
         "AddMissingParentheses",
         "AddObjectCaptions",
         "AddPageFieldCaptions",
@@ -56,9 +42,14 @@
         "FixKeywordsCase",
         "FormatDocument",
         "LockRemovedFieldCaptions",
+        "MakeFlowFieldsReadOnly",
         "RemoveBeginEnd",
         "RemoveEmptyLines",
         "RemoveEmptySections",
+        "RemoveEmptyTriggers",
+        "RemoveRedundantAppAreas",
+        "RemoveRedundantDataClassification",
+        "RemoveStrSubstNoFromError",
         "RemoveUnusedVariables",
         "RemoveWithStatements",
         "SortCustomizations",
@@ -70,6 +61,10 @@
         "SortTableFields",
         "SortVariables",
         "TrimTrailingWhitespace"
+    ],
+    "alOutline.completionProviders": [
+        "VariableDataTypes",
+        "VariableNamesWithType"
     ],
     "alOutline.defaultAddPageFieldCaptionsSettings": {
         "setActionGroupsCaptions": true,
@@ -87,22 +82,20 @@
     "alOutline.fixCodeCopMissingParenthesesOnSave": true,
     "alOutline.lockRemovedFieldsCaptions": true,
     "alOutline.noEmptyLinesAtTheEndOfWizardGeneratedFiles": true,
-    "ALTB.snippetTargetLanguage": "nl-BE",
-    "ALTB.snippetTargetLanguage2": "fr-BE",
-    "ALTB.UseOldFileNamingConventions": false,
-    "al-xml-doc.CheckObjectDocumentationInformationLevel": "Warning",
+    "alOutline.useTableFieldCaptionsInApiFields": false,
+    "al-xml-doc.CheckObjectDocumentationInformationLevel": "Disabled",
     "al-xml-doc.CheckProcedureDocumentationForAccessLevel": [
         "Public"
     ],
     "al-xml-doc.CheckProcedureDocumentationForType": [
         "Global Procedures",
-        "Local Procedures",
-        "Internal Procedures",
-        "Protected Procedures",
         "Event Publisher",
         "Control Add-In Events"
     ],
     "al-xml-doc.CheckProcedureDocumentationInformationLevel": "Warning",
+    "ALTB.snippetTargetLanguage": "nl-BE",
+    "ALTB.snippetTargetLanguage2": "fr-BE",
+    "ALTB.UseOldFileNamingConventions": false,
     "CRS.AlSubFolderName": "src",
     "CRS.ExtensionObjectNamePattern": "",
     "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
@@ -110,14 +103,38 @@
     "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
     "CRS.OnSaveAlFileAction": "Rename",
     "CRS.ObjectNamePrefix": "JPO",
-    "CRS.RemovePrefixFromFilename": true,
     "CRS.RenameWithGit": true,
+    "CRS.RemovePrefixFromFilename": true,
     "editor.codeActionsOnSave": {
         "source.fixAll": true
     },
-    "files.exclude": {
-        "**/.alcache": true
-    },
-    "NAB.UseDTS": true,
-    "NAB.UseExternalTranslationTool": true
+    "NAB.ReplaceSelfClosingXlfTags": false,
+    "NAB.SearchReplaceBeforeSaveXliff": [
+        {
+            "searchFor": ".*<note from=\"NAB AL Tool Refresh Xlf\" (.*)>(.*)</note>\r\n",
+            "replaceWith": ""
+        },
+        {
+            "searchFor": " />",
+            "replaceWith": "/>"
+        }
+    ],
+    "NAB.UseExternalTranslationTool": true,
+    "xliffSync.autoCheckMissingTranslations": true,
+    "xliffSync.autoCheckNeedWorkTranslations": true,
+    "xliffSync.findBySource": true,
+    "xliffSync.findBySourceAndDeveloperNote": true,
+    "xliffSync.needWorkTranslationRules": [
+        "ConsecutiveSpacesConsistent",
+        "ConsecutiveSpacesExist",
+        "OptionLeadingSpaces",
+        "OptionMemberCount",
+        "Placeholders"
+    ],
+    "xliffSync.parseFromDeveloperNote": true,
+    "xliffSync.parseFromDeveloperNoteOverwrite": true,
+    "xliffSync.parseFromDeveloperNoteSeparator": ",",
+    "xliffSync.parseFromDeveloperNoteTrimCharacters": "\"",
+    "xliffSync.preserveTargetAttributesOrder": true,
+    "xliffSync.snippetTargetLanguage": "nl-BE"
 }
