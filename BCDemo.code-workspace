@@ -7,5 +7,7 @@
       "path": "App"
     }
   ],
-  "settings": {}
+  "settings": {
+      "alVarHelper.ignoreALPrefix": "JPO"
+  }
 }

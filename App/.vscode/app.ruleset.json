@@ -5,7 +5,7 @@
         {
             "id": "PTE0012",
             "action": "None",
-            "justification": "The InternalsVisibleTo property will expose your internal objects to any extension with the given name, publisher, and ID. Using access modifiers for security-sensitive code is not recommended. - App can be used by other SDP apps."
+            "justification": "The InternalsVisibleTo property will expose your internal objects to any extension with the given name, publisher, and ID. Using access modifiers for security-sensitive code is not recommended."
         },
         {
             "id": "AA0072",

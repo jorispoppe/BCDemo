@@ -4,7 +4,7 @@ pageextension 60001 "JPO Item Export" extends "Item List"
     {
         addafter(CopyItem)
         {
-            action(SDPExportCSV)
+            action("JPO Export CSV")
             {
                 ApplicationArea = All;
                 Caption = 'Export CSV';
@@ -19,7 +19,7 @@ pageextension 60001 "JPO Item Export" extends "Item List"
         }
         addfirst(Category_Process)
         {
-            actionref(SDPExportCSV_Promoted; SDPExportCSV)
+            actionref("JPO Export CSV_Promoted"; "JPO Export CSV")
             {
             }
         }

@@ -2,7 +2,7 @@
   "id": "d84b5bbe-50bb-4643-8ea1-d9accf4b052c",
   "name": "BC-Demo",
   "publisher": "JorisPoppe",
-  "version": "22.0.0.0",
+  "version": "23.0.0.0",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -12,8 +12,8 @@
   "logo": "",
   "dependencies": [],
   "screenshots": [],
-  "platform": "22.0.0.0",
-  "application": "22.0.0.0",
+  "platform": "23.0.12034.12167",
+  "application": "23.0.12034.12167",
   "idRanges": [
     {
       "from": 60000,
@@ -30,6 +30,6 @@
     "allowDownloadingSource": false,
     "includeSourceInSymbolFile": false
   },
-  "runtime": "11.0",
+  "runtime": "12.0",
   "target": "Cloud"
 }
